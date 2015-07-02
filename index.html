@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja" manifest="fifteen-pazzle.appcache">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-startup-image" href="img/splash4.png" media="only screen and (-webkit-device-pixel-ratio:2) and (device-height:480px)" />
+<link rel="apple-touch-startup-image" href="img/splash5.png" media="only screen and (-webkit-device-pixel-ratio:2) and (device-height:568px)" />
+<link rel="apple-touch-icon" href="img/fifteen-pazzle.png" />
+<title>15pazzle</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#container {
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="js/fifteen-pazzle.js"></script>
+<script>
+$(function(){
+  $('html,body').animate({ scrollTop: 0 }, 'fast');
+  FifteenPazzle.init('#game',
+    [
+      'img/cats_cats_62.jpg',
+      'img/cats_cats_90.jpg',
+      'img/number.png'
+    ]
+  ).start(4);
+});
+</script>
+</head>
+<body>
+<div id="container">
+<div id="game"></div>
+</div>
+</body>
+</html>

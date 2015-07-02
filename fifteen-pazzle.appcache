@@ -1,0 +1,17 @@
+CACHE MANIFEST
+
+# $Id: fifteen-pazzle.appcache,v 1.0.5 2014/03/04 14:05 irokawa Exp $
+
+CACHE:
+http://code.jquery.com/jquery-1.7.2.min.js
+index.html
+img/splash5.png
+img/splash4.png
+img/number.png
+img/cats_cats_62.jpg
+img/cats_cats_90.jpg
+img/fifteen-pazzle.png
+js/fifteen-pazzle.js
+
+NETWORK:
+
